@@ -18,7 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -30,9 +29,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-}
-ol, ul {
-	list-style: none;
 }
 blockquote, q {
 	quotes: none;
@@ -49,7 +45,7 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
@@ -58,9 +54,232 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
+    font-family: 'bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
+
+.container {
+	width: 900px;
+	margin:0 auto;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav {
+
+}
+
+nav a{
+	margin-right: 50px;
+	text-decoration: none;
+	color: gray;
+}
+
+nav a:hover{
+color: white;
+background-color: orange;
+}
+
+.container nav .logo {
+	margin-left: 50px;
+}
+
+.section-One {
+	margin-top: 40px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.section-One .button-1 {
+	text-align: center;
+	background-color: white;
+	border: 1px black solid;
+	width: 120px;
+	height: 40px;
+}
+
+.button-1:hover {
+	background-color: orange;
+}
+
+
+.section-One div p {
+	font-size: 70px;
+	font-family: 'Righteous';
+	letter-spacing: 3px;
+	text-align: center;
+}
+
+.section-One div img {
+	width: 300px;
+}
+
+
+
+
+
+
+.feature-Section .box-Container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.feature-Section .box-1 {
+	width: 49%;
+}
+
+.feature-Section .box-2 {
+	width: 49%;
+}
+
+/*SECTION ONE*/
+
+.feature-Section .box-3 {
+	width: 30%;
+}
+
+.feature-Section .box-4 {
+	width: 30%;
+}
+
+.feature-Section .box-5 {
+	width: 30%;
+}
+
+.feature-Section .box-Container {
+	display: flex;
+}
+
+.feature-Section .middle-img {
+	margin: 30px auto;
+	width: 100%;
+}
+
+
+.contact-Section footer .contact-1{
+	display: flex;
+	flex-flow: column; 
+	width: 30%;
+	justify-content: space-around;
+}
+
+.copyright {
+	margin-top: 30px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.info {
+	line-height: 30px;
+}
+
+.brk {
+	text-align: center;
+	margin: 30px 0;
+	width: 900px;
+}
+
+/*<----------------------------------- END OF HTML.INDEX ----------------------------------->*/
+
+/*<----------------------------------- START OF SERVICES.INDEX ----------------------------------->*/
+
+.container-services {
+	width: 50%;
+	margin: auto;
+}
+
+.container header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.services-header-img {
+	width: 100%;
+}
+
+.services-top-section {
+	margin-top: 3%;
+	display: flex;
+	font-size: 150%;
+}
+
+.services-top {
+	margin-bottom: 3%;
+}
+
+.large-container {
+	margin-top: -1%;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	margin-bottom: 4%;
+}
+
+.large-container-box {
+	margin-top: 4%;
+	background-color: #ebedf0;
+	border-radius: 1%;
+	padding: 2%;
+	width: 48%;
+	height: 40%;
+	border: 1px solid black;
+}
+
+.large-container-box .btn-2 {
+	display: inline-block;
+	margin-top: 5%;
+	background-color: white;
+	border: black 1px solid;
+	border-radius: 5%;
+	border-width: 40%;
+	text-align: center;
+	padding: 2.5%;
+	width: 40%;
+}
+
+.large-container-box .btn-2:hover {
+	background-color: orange;
+}
+
+.bottom-services-section {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+}
+
+.large-container-box-bottom {
+	margin-top: 4%;
+	width: 48%;
+	height: 30%;
+}
+
+.services-info-img {
+	width: 100%;
+	height: 100%;
+}
+
+.bottom-img {
+	margin-top: 4%;
+	width: 48%;
+}
+
+.large-container-box-bottom ul {
+	margin-left: 5%;
+}
+
+.services-footer {
+	margin-top: 8%;
+	margin-bottom: 4%;
+	text-align: center;
+}
